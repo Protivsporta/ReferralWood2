@@ -98,6 +98,6 @@ contract ReferralWood is Ownable {
         return usersList[msg.sender].referrer;
     }
 
-    event Joined(address _user, address _referrer);
-    event ChestUnlocked(address _owner, uint8 _level);
+    event Joined(address indexed _user, address _referrer);
+    event ChestUnlocked(address indexed _owner, uint8 _level);
 }
